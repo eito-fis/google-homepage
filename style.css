@@ -82,29 +82,64 @@ body {
 	height: 300px;
 	margin: 200px auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-direction: column;
-	background: blue;
 }
 
 .logo {
-	height: 100px;
-	width: 500px;
+	width: 270px;
 	margin: 0px auto;
-	background: green;
+	overflow: hidden;
 }
 
 .main-input {
-	width: 100%;
+	width: 90%;
+	margin: 5px 20px 5px 5px;
+}
+
+.main-image {
+	width: 3%;
+	margin: 5px 15px;
+	fill: #888888;
+}
+
+.main-input-border {
+	width: 85%;
 	max-width: 600px;
-	height: 100px;
-	background: red;
-	margin: 0px auto;
-	display: table;
+	height: 50px;
+	border: 1px solid #DADADA;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.main-input-border:hover {
+	-webkit-box-shadow: 0px 4px 10px 1px #807C7C;
+	box-shadow: 0px 1px 3px 1px #DDDDDD;
+}
+
+.main-input-border:active {
+	-webkit-box-shadow: 0px 4px 10px 1px #807C7C;
+	box-shadow: 0px 1px 3px 1px #DDDDDD;
+}
+
+.main-input-wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .submit-buttons {
-	height: 100px;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 20px 0;
+}
+
+.submit-button {
+	height: 30px;
+	width: 25%;
 }
 
